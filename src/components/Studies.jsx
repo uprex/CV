@@ -30,7 +30,7 @@ export default function Formation() {
 
       <div className="relative">
         {/* Frise verticale (ligne pointillée) */}
-        <div className="absolute top-0 left-1/2 h-full border-l-2 border-dashed border-blue-400 transform -translate-x-1/2 z-0" />
+        <div className="absolute top-0 left-1/2 h-full border-l-2 border-dashed border-blue-400 transform -translate-x-1/2 z-0 text-justify" />
 
         {/* Conteneur des formations */}
         <div className="space-y-8">
@@ -44,12 +44,12 @@ export default function Formation() {
               className="relative"
             >
               {/* Carte en pleine largeur avec barre latérale */}
-              <div className={`flex w-full ${idx % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
+              <div className={`text-justify flex w-full ${idx % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                 {/* Barre latérale colorée */}
                 <div className={`w-4 ${idx % 2 === 0 ? 'bg-blue-500 rounded-r-lg' : 'bg-blue-300 rounded-l-lg'}`}></div>
 
                 {/* Contenu de la carte */}
-                <div className="w-full bg-white rounded-lg shadow-sm p-6 border border-gray-100">
+                <div className="w-full bg-white rounded-lg shadow-sm p-6 border border-gray-100 text-justify">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                     <h3 className="text-xl font-semibold text-blue-900">{formation.title}</h3>
                     <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full mt-2 md:mt-0">

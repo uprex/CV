@@ -41,10 +41,12 @@ export default function Experience() {
 
   return (
     <section className="mb-10 max-w-3xl mx-auto px-4">
-      <h2 className="text-2xl font-semibold mb-8 text-blue-700">Expérience</h2>
+      <h2 className="text-3xl font-bold mb-12 text-blue-800 flex items-center justify-center">
+        <span className="mr-3"></span> Expérience 
+      </h2>
       <div className="relative">
         {/* Frise verticale centrée */}
-        <div className="absolute top-0 left-1/2 h-full border-l-2 border-blue-500 transform -translate-x-1/2" />
+        <div className="absolute top-0 left-1/2 h-full border-l-2 border-blue-500 text-justify transform -translate-x-1/2" />
 
         {experiences.map((exp, idx) => (
           <motion.div
@@ -58,7 +60,7 @@ export default function Experience() {
             {/* Carte à gauche ou droite selon l'index */}
             <div className={`w-full ${idx % 2 === 0 ? 'sm:pr-10' : 'sm:pl-10'}`}>
               <div
-                className={`inline-block bg-white rounded-lg shadow-lg p-6 border border-gray-100 relative ${
+                className={`inline-block bg-white rounded-lg text-justify shadow-lg p-6 border border-gray-100 relative ${
                   idx % 2 === 0 ? 'sm:mr-auto' : 'sm:ml-auto'
                 }`}
               >

@@ -18,10 +18,9 @@ export default function About() {
           animate={{ scale: 1 }}
           transition={{ duration: 0.6 }}
         />
-      <h2 className="text-2xl font-semibold mb-4 text-blue-700">À propos</h2>
       <p className="text-gray-800 text-sm mb-4">
-        Ingénieur en développement informatique industrielle basé à Lyon, j'ai un fort attrait pour le développement d'applications ayant un réél impact sur le quotidien des utilisateurs.
-        Fort de plusieurs années d’expérience dans le domaine de l'industrie je suis spécialisé dans la logistique des WCS et WMS et des équipements qui gravitent autour.
+        Ingénieur en développement informatique industrielle basé à Lyon, j'ai un attrait important pour le développement d'applications ayant un réél impact sur le quotidien des utilisateurs.
+        Fort de plusieurs années d’expérience dans le domaine de l'industrie je suis spécialisé dans la logistique comprenant les WCS, WMS et les équipements qui gravitent autour.
       </p>
       <ul className="text-sm text-gray-700 list-disc list-inside space-y-1">
         <li><strong>Poste :</strong> Ingénieur d'étude</li>

@@ -61,30 +61,46 @@ export default function Skills() {
 
   return (
     <section className="mb-10">
-      <h2 className="text-2xl font-semibold mb-6 text-blue-700">Compétences</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {skills.map((skill, index) => (
-          <motion.div
+  <h2 className="text-3xl font-bold mb-12 text-blue-800 flex items-center justify-center">
+    <span className="mr-3"></span> Compétences
+  </h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-justify">
+    <ul className="list-disc list-inside space-y-3 ">
+      {skills
+        .filter((_, index) => index % 2 === 0)
+        .map((skill, index) => (
+          <motion.li
             key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="bg-white p-3 rounded shadow text-sm"
+            className="text-sm"
           >
-            <div className="flex justify-between items-center mb-1">
-              <h3 className="font-medium">{skill.name}</h3>
-              <span className="text-gray-600">{skill.level}%</span>
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
-              <div
-                className="bg-blue-500 h-2 rounded-full transition-all duration-500"
-                style={{ width: `${skill.level}%` }}
-              ></div>
-            </div>
-          </motion.div>
+            <span className="font-bold">{skill.name}</span>
+          </motion.li>
         ))}
-      </div>
-    </section>
+    </ul>
+
+    <ul className="list-disc list-inside space-y-3">
+      {skills
+        .filter((_, index) => index % 2 !== 0)
+        .map((skill, index) => (
+          <motion.li
+            key={index}
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4 }}
+            className="text-sm"
+          >
+            <span className="font-bold">{skill.name}</span>
+          </motion.li>
+        ))}
+    </ul>
+  </div>
+</section>
+
   );
 }
