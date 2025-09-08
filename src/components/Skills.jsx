@@ -64,7 +64,7 @@ export default function Skills() {
   <h2 className="text-3xl font-bold mb-12 text-blue-800 flex items-center justify-center">
     <span className="mr-3"></span> Compétences
   </h2>
-
+  <div className={`w-full bg-white rounded-lg shadow-sm p-6 border border-gray-100`}>
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-justify">
     <ul className="list-disc list-inside space-y-3 ">
       {skills
@@ -99,6 +99,7 @@ export default function Skills() {
           </motion.li>
         ))}
     </ul>
+  </div>
   </div>
 </section>
 
