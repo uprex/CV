@@ -8,7 +8,7 @@ const experiences = [
     period: "Septembre 2023 – Présent",
     details: "Etude, développement, mise en service (déplacements internationaux) et maintenance d'applications en C# .NET dans un environnement logistique. \n Developpement d'outils pour la gestion d'entrepôts automatisés WCS et la communication avec les outils clients WMS (API REST) ou des équipements physiques (PLC, Arche de lecture, Autostore, Trieurs, Imprimante, Balance).",
     moreDetails: "Intégration des logiciels dans une optique CI/CD via des pipelines Azure DevOps \n Outils : C# .NET, Azure DevOps, Docker, SQL Server, Redis, RabbitMQ, IIS, Blazor, Git.",
-    logo: "/fives.png"
+    logo: "images/fives.png"
   },
   {
     title: "Consultant ingénieur informatique",
@@ -16,7 +16,7 @@ const experiences = [
     period: "Mars 2022 – Aout 2023",
     details: "Mission chez Fives Intralogistics SAS en tant qu'ingénieur d'études. \n Etude, développement, mise en service (déplacements internationaux) et maintenance d'applications en C# .NET dans un environnement logistique. \n Developpement d'outils pour la gestion d'entrepôts automatisés WCS et la communication avec les outils clients WMS (API REST) ou des équipements physiques (PLC, Arche de lecture, Trieurs, Imprimante, Balance).",
     moreDetails: "Intégration des logiciels dans une optique CI/CD via des pipelines Azure DevOps \n Outils : C# .NET, Azure DevOps, Docker, SQL Server, Redis, RabbitMQ, Git.",
-    logo: "/agap2.png"
+    logo: "images/agap2.png"
   },
   {
     title: "Alternant chef de projet",
@@ -24,7 +24,7 @@ const experiences = [
     period: "Octobre 2020 – Octobre 2021",
     details: "Gestion d'un projet avec un client internationnal, intégration d'une nouvelle gamme de produit à un entrepôt. Gestion des contraintes techniques et physiques associées.",
     moreDetails: "Communication et élaboration du besoin avec le client à l'étranger. \n Réalisation de documentation technique et fonctionnelle. Participation aux comités de chiffrage. Tests techniques et fonctionnels, Support niveau 2 \n Outils : C, Pro C, linux, windows, Oracle 11, PowerBuilder, Cycle en V, Agilité",
-    logo: "/klocel.png"
+    logo: "images/klocel.png"
   },
   {
     title: "Alternant analyste développeur",
@@ -32,7 +32,7 @@ const experiences = [
     period: "Juillet 2018 – Octobre 2021",
     details: "Participation au développement d'un WMS (Warehouse Management System) en C dans un environnement windows/linux. Réception de besoin technique \n Développement de nouvelles fonctionnalités, correction de bugs.",
     moreDetails: "Retro engineering, Tests techniques et fonctionnels.\n Réalisation de documentations techniques et fonctionnelles. Support niveau 2 \n Outils : C, Pro C, linux, windows, Oracle 11, PowerBuilder, Cycle en V, Agilité",
-    logo: "/klocel.png"
+    logo: "images/klocel.png"
   }
 ];
 

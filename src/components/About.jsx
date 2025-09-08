@@ -11,7 +11,7 @@ export default function About() {
   className="mb-10 bg-white p-5 rounded shadow"
 >
       <motion.img
-          src="/pdp.jpg"
+          src="images/pdp.jpg"
           alt="Photo de Valentin HALLAY"
           className="w-32 h-32 rounded-full border-4 border-white shadow-lg mx-auto mb-6"
           initial={{ scale: 0 }}
